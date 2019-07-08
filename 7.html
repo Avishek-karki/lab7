@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Checking Random Number</title>
+</head>
+<body>
+	<center>
+	<p> Click the button to get the random number:</p>
+	<button onclick="myFunc()">Click here</button>
+	<p id="demo"></p>
+	<script type="text/javascript">
+		function myFunc() {
+			var a=Math.floor((Math.random()*100)+1);
+			document.getElementById("demo").innerHTML=a;
+			if (a<20) {
+				alert("The random number is greater than 20");
+			}
+			else if (a=20) {
+				alert("The random number is equal to 20");      
+			}
+			else{
+				alert("The random number is less than 20");
+
+			}
+		}
+		
+	</script>
+</center>
+
+</body>
+</html>

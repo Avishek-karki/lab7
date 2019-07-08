@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Click the button to replace "Avishek" with "Avi" in the paragraph below:</p>
+
+<p id="demo">I'm Avishek.</p>
+<p id="dem"></p>
+
+<button onclick="myFunction()">Replace</button>
+<button onclick="myFunc()">Substring</button>
+<button onclick="myFun()">index</button>
+<button onclick="myFunct()">sort</button>
+<script>
+function myFunction() {
+  var str = document.getElementById("demo").innerHTML; 
+  var res = str.replace("Avishek", "Avi");
+  document.getElementById("demo").innerHTML = res;}
+  function myFunc(){
+  	 var str = document.getElementById("demo").innerHTML;
+  var res1 = str.substring(3, 2);
+  document.getElementById("demo").innerHTML = res1;
+}
+ function myFun(){
+  	 var str = document.getElementById("demo").innerHTML;
+  var n= str.lastIndexOf("Avishek")
+  document.getElementById("demo").innerHTML = n;
+}
+var names=["Neetu","Anil","Dhruba","Avi"];
+document.getElementById("demo").innerHTML = names;
+function myFunct()
+{
+	names.sort();
+  document.getElementById("demo").innerHTML = names;
+
+}
+
+
+</script>
+
+</body>
+</html>
